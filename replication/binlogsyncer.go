@@ -398,9 +398,9 @@ func (b *BinlogSyncer) prepare() error {
 		return errors.Trace(ErrSyncClosed)
 	}
 
-	if err := b.registerSlave(); err != nil {
-		return errors.Trace(err)
-	}
+	// if err := b.registerSlave(); err != nil {
+	// 	return errors.Trace(err)
+	// }
 
 	if err := b.enableSemiSync(); err != nil {
 		return errors.Trace(err)
